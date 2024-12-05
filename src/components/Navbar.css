@@ -1,0 +1,154 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: white;
+    height: 60px; 
+    z-index: 10;  
+    position: sticky;
+    top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-left a {
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #1F1F1F;
+}
+
+.nav-left a:hover {
+    text-decoration: underline;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #1F1F1F;
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons svg {
+    font-size: 24px;
+    color: #5f6368;
+    cursor: pointer;
+}
+
+.nav-right button {
+    padding: 12px 18px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #1a73e8;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+}
+
+.nav-right button:hover {
+    background-color: #1558b0;
+}
+
+.card {
+  position: absolute; 
+  top: 40px; 
+  right: 10px; 
+  background-color: #f1f8f8;
+  border: 8px solid #e2e9e9; 
+  border-radius: 10px; 
+  padding: 0;
+  padding-top: 40px;
+  padding-left: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 360px;
+  height: 450px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 15px;
+  border-bottom: hidden;
+}
+
+
+.card::-webkit-scrollbar {
+  width: 12px;
+  border-left: 8px solid #e2e9e9;
+}
+  
+  
+.card::-webkit-scrollbar-track {
+  background: #f1f1f1;  
+  border-radius: 10px;  
+}
+  
+  
+.card::-webkit-scrollbar-thumb {
+  background-color: #e2e9e9;  
+  border-radius: 10px;      
+  border: 3px solid #f1f1f1; 
+}
+
+.card-content {
+  border-radius: 19px;
+  overflow: hidden;
+}
+  
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding-right: 70px;
+  padding-left: 30px;
+  margin-top: 10px 0;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+ 
+.grid-container .grid-items:nth-last-child(n+4):nth-last-child(-n+6) {
+  border-bottom: 2px solid #e2e9e9; 
+}
+  
+.grid-container {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.grid-items {
+  width: 44.3px;
+  height: 44.3px;
+  border-radius: 4px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.card-button {
+  padding: 12px 18px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 80px;
+  font-size: 14px;
+  color: #1a73e8;
+  background-color: #e2e9e9;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+}  
